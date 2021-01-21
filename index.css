@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px green dashed; */
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background: #8e0e00;
+	background-image: linear-gradient(to left, #8e0e00, #1F1C18);
+	
+	min-height: 100vh;
+	
+	font-family: Roboto;
+}
+
+/* card-container */
+#card-container{
+	background: #f7f7f7;
+	
+	border-radius: 15px;
+	box-shadow: 0 0 5px #000;
+	
+	overflow: hidden;
+	
+	margin: 20px 20px;
+}
+
+/* logo */
+#logo{
+	background: #1F030C;
+}
+#logo h2{
+	color: #fff;
+	
+	text-align: center;
+	
+	font-size: 2.3em;
+	font-weight: 500;
+	
+	padding: 10px 10px;
+}
+
+/* section-container */
+#section{
+	margin: 10px;
+	
+	font-size: 1.3em;
+}
+h4{
+	font-weight: 400;
+}
+input, select{
+	border-radius: 5px;
+}
+input:focus, select:focus, button:focus{
+	outline: none;
+}
+
+/* bill */
+#bill{
+	padding: 5px 0 10px 0;
+	width: 70%;
+	display: flex;
+}
+#bill label{
+	padding: 5px;
+	width: 10%;
+	text-align: center;
+	vertical-align: center;
+}
+#bill input{
+	padding: 5px 3px;
+	font-size: 20px;
+	width: 90%;
+}
+
+/* rating */
+#rate{
+	display: flex;
+	justify-content: flex-end;
+}
+#serv-rating{
+	width: 85%;
+	text-align: center;
+	
+	background: #fff;
+	
+	font-size: 25px;
+	
+	padding: 10px 10px;
+	margin: 5px 0 10px 0;
+}
+
+/* total people */
+#people{
+	display: flex;
+	align-items: center;
+	
+	margin: 5px 0 0 0;
+}
+#total-people{
+	padding: 5px 3px;
+	
+	font-size: 20px;
+	
+	width: 70%;
+}
+#people label{
+	padding: 5px;
+	
+	width: 30%;
+}
+
+/* calculate buttom */
+#button-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#button{
+	min-width: 50%;
+	
+	background: #8e0e00;
+	
+	color: #fff;
+	
+	margin: 20px 0;
+	
+	padding: 6px 20px;
+	
+	font-size: 30px;
+	font-weight: bold;
+	
+	border-radius: 5px;
+}
+
+/* result */
+#tip-amount{
+	text-align: center;
+}
+#tip-amount h4{
+	font-weight: bold;
+}
+#output{
+	font-size: 30px;
+}

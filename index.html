@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>TIP CALCULATOR</title>
+  
+</head>
+<body>
+	
+	<!-- card container -->
+	<div id="card-container">
+		
+		<!-- header -->
+		<header id="logo">
+			<!-- logo -->
+			<h2>TIP CALCULATOR</h2>
+		</header>
+		
+		<!-- section -->
+		<section id="section">
+			
+			<!-- bill input -->
+			<div id="bill-container">
+				<h4>How much was your bill?</h4>
+				<form id="bill">
+					<label for="bill-amount">$</label>
+					<input type="number" id="bill-amount" placeholder="Bill Amount"/>
+				</form>
+			</div>
+			
+			<!-- rating input -->
+			<div id="rating-container">
+				<h4>How was their service?</h4>
+				<form for="serv-rating" id="rate">
+					<select id="serv-rating">
+						<option disabled selected value="0">__ Choose an option __</option>
+						<option value="0.3">30% - Outstanding</option>
+						<option value="0.2">20% - Good</option>
+						<option value="0.15">15% - It was OK</option>
+						<option value="0.1">10% - Bad</option>
+						<option value="0.05">5% - Terrible</option>
+					</select>
+				</form>
+			</div>
+			
+			<!-- people sharing input -->
+			<div id="people-container">
+				<h4>How many people are sharing the bill?</h4>
+				<form id="people">
+					<input type="number" id="total-people" placeholder="Number of People"/>
+					<label for="total-people">people</label>
+				</form>
+			</div>
+			
+			<!-- button -->
+			<div id="button-container">
+				<button id="button">CALCULATE</button>
+			</div>
+			
+			<!-- tip amount -->
+			<div id="tip-amount">
+				<h4>TIP AMOUNT</h4>
+				<h3 id="output">$ <span id="pay-each">0.00</span></h3>
+				<h5>each</h5>
+			</div>
+			
+		</section>
+		
+	</div>
+	
+	<!-- script -->
+  <script src="js/index.js"></script>
+</body>
+</html>
